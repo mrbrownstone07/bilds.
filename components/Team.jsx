@@ -58,14 +58,14 @@ export default function Team() {
     return (
         <div className="mt-10 px-4 md:px-12 lg:px-20">
             {/* Team Section */}
-            <Card className="shadow-lg rounded-lg p-10 bg-color-none text-gray-100 h-full flex-1 border-none">
+            <Card className="shadow-lg rounded-lg lg:p-10 p-4 bg-color-none text-gray-100 h-full flex-1 border-none">
                 {/* <CardHeader>
                     <CardTitle className="text-2xl font-semibold text-primary text-center">
                         Team
                     </CardTitle>
                 </CardHeader>  */}
                 <CardContent>
-                <div className="flex flex-wrap justify-center gap-6">
+                <div className="flex flex-wrap justify-center">
                     {teamMembers.map((member, index) => (
                         <RectCard
                             key={index}
@@ -83,7 +83,7 @@ export default function Team() {
             </Card>
 
             {/* Board of Directors Section */}
-            <Card className="rounded-lg p-10 text-gray-100 bg-color-none h-full flex-1 border-none mt-10">
+            <Card className="rounded-lg lg:p-10 p-4 text-gray-100 bg-color-none h-full flex-1 border-none mt-10">
                 {/* <CardHeader>
                     <CardTitle className="text-2xl font-semibold text-primary text-center">
                         Board of Directors
