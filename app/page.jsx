@@ -22,23 +22,23 @@ export default function Index() {
 			<Hero />
 		  </div>
   
-		  <div className="h-full w-full rounded-md bg-gray-220 relative flex flex-col items-center justify-center antialiased">
-			<div className="absolute inset-0 pointer-events-none bg-dot-thick-purple-200 z-10"></div> 
+		<div className="h-full w-full rounded-md relative flex flex-col items-center justify-center antialiased">
+			<div className="absolute inset-0 pointer-events-none bg-dot-thick-purple-300 z-10 opacity-10 animate-pulse"></div> 
 			<div className="z-10">
-			  <div className="w-full">
-				<Content />
-			  </div>
-			  <div className="w-full">
-				<Goals />
-			  </div>
-			  <div className="w-full">
-				<Team />
-			  </div>
-			  <div className="w-full">
-				<Outro />
-			  </div>
+				<div className="w-full">
+					<Content />
+				</div>
+				<div className="w-full">
+					<Goals />
+				</div>
+				<div className="w-full">
+					<Team />
+				</div>
+				<div className="w-full">
+					<Outro />
+				</div>
 			</div>
-		  </div>
+		</div>
   
 		  <div className="w-full bg-background mt-1">
 			<Footer />

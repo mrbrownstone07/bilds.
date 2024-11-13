@@ -23,11 +23,10 @@ export function Hero() {
                                 <Image
                                     src="/bilds-icon.svg"
                                     alt="Icon"
-                                    layout="responsive"
-                                    width={250}
-                                    height={250}
+                                    // layout="responsive"
+                                    width={200}
+                                    height={150}
                                     priority={true}
-                                    className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8" // Adjust these sizes as needed
                                 />
                             </motion.div>
                         </div>
@@ -55,7 +54,7 @@ const Subtitle = () => {
         <>
             <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
                 Revolutionizing
-                <span className="font-bold text-pink-400"> INDUSTRIES </span>
+                <span className="font-bold text-pink-400"> INDUSTRY </span>
                 with
             </p>
             <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
