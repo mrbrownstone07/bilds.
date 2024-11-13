@@ -54,7 +54,7 @@ const Subtitle = () => {
         <>
             <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
                 Revolutionizing
-                <span className="font-bold text-pink-400"> INDUSTRY </span>
+                <span className="font-bold text-primary-400"> INDUSTRY </span>
                 with
             </p>
             <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
