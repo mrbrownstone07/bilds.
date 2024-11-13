@@ -41,22 +41,17 @@ export function Hero() {
 
 const Title = () => {
     return (
-        
-            <div className={`${anton.className} lg:text-8xl text-4xl font-bold flex items-center justify-center`}>
-                {/* <h1 className='lg:text-8xl text-4xl'> bilds. </h1> */}
-                <TextHoverEffect text="bilds." />
-                
-            </div>
-
+        <div className={`${anton.className} lg:text-8xl text-4xl font-bold flex items-center justify-center`}>
+            <TextHoverEffect text="bilds." />
+        </div>
     );
 };
 
 const Subtitle = () => {
     return (
         <>
-
             <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
-                Empowering Bangladesh's 
+                Empowering {"Bangladesh's"} 
                 <span className="font-bold text-pink-400"> FMCG </span>
                 Industry
             </p>
@@ -68,7 +63,6 @@ const Subtitle = () => {
             <div className={`mt-auto lg:text-xl font-bold text-center`}>
                 Driving transformation, efficiency, and sustainable growth across the FMCG sector in Bangladesh
             </div>
-
         </>
     );
 };

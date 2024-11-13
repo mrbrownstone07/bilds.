@@ -15,20 +15,11 @@ export const lato = Lato({
     weight: ["400", "300", "700"]
 });
 
-export const doto = Doto({
-    subsets: ['latin'],
-    variable: "--font-doto",
-    display: "swap",
-    weight: ["400", "300", '900']
-});
-
-
 
 // Usage in global CSS
 export const globalStyles = `
   :root {
     ${lato.variable}: "Lato", serif;
-    ${doto.variable}: "Doto", sans-serif;
     ${anton.variable}: 'Anton', sans-serif;
   }
 `;
