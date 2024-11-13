@@ -11,7 +11,7 @@ export function RectCard({
     imageSrc,
     imageAlt = "Team Member Image",
     className = "",
-    iconClass = "h-6 w-6 text-white",
+    iconClass = "h-6 w-6 text-primary",
     children,
 }) {
     return (
@@ -19,14 +19,14 @@ export function RectCard({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeIn" }}
-            className={`border border-white/[0.2] bg-zinc-950 flex flex-col items-start max-w-sm mx-auto p-4 relative ${className}`}
+            className={`border border-primary/[0.2] bg-background flex flex-col items-start max-w-sm mx-auto p-4 relative ${className}`}
         >
             <Icon className={`absolute -top-3 -left-3 ${iconClass}`} />
             <Icon className={`absolute -bottom-3 -left-3 ${iconClass}`} />
             <Icon className={`absolute -top-3 -right-3 ${iconClass}`} />
             <Icon className={`absolute -bottom-3 -right-3 ${iconClass}`} />
 
-            <Card className="border-none p-2 bg-zinc-950">
+            <Card className="border-none shadow-none p-2 bg-background">
                 <CardHeader>
                     <CardTitle className="text-center">
                         <motion.p
@@ -53,7 +53,7 @@ export function RectCard({
                         transition={{ delay: .6 }}
                     >
                         <CardDescription>
-                            <p className="lg:text-sm text-sm text-white text-center">{description}</p>
+                            <p className="lg:text-sm text-sm text-primary text-center">{description}</p>
                         </CardDescription>
                     </motion.div>
                     {children}

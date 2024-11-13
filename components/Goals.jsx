@@ -65,7 +65,7 @@ export function Goals() {
 
     return (
         <div className="px-4 md:px-12 lg:px-20">
-            <Card className="shadow-lg rounded-lg p-6 bg-black-800 text-gray-100 h-full flex-1 border-none">
+            <Card className="shadow-none rounded-lg p-6 bg-black-800 text-primary h-full flex-1 border-none">
                 <CardHeader>
                     <CardTitle className="text-2xl font-semibold text-primary text-center">
                         Our Commitments
@@ -97,26 +97,26 @@ const Goal = ({
             )}>
             {index < 4 && (
                 <div
-                    className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-800 to-transparent pointer-events-none" />
+                    className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-purple-200 to-transparent pointer-events-none" />
             )}
             {index >= 4 && (
                 <div
-                    className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-800 to-transparent pointer-events-none" />
+                    className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-purple-200 to-transparent pointer-events-none" />
             )}
             <div
-                className="mb-4 relative z-10 px-10 text-neutral-400">
+                className="mb-4 relative z-10 px-10 text-primary-400">
                 {icon}
             </div>
             <div className="text-lg font-bold mb-2 relative z-10 px-10">
                 <div
-                    className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+                    className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-purple-500 transition-all duration-200 origin-center" />
                 <span
-                    className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-100">
+                    className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-primary-100">
                     {title}
                 </span>
             </div>
             <p
-                className="text-sm text-neutral-300 max-w-xs relative z-10 px-10">
+                className="text-sm text-neutral-300 max-w-xs relative z-10 px-10 text-primary">
                 {description}
             </p>
         </div>)

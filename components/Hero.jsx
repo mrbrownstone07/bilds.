@@ -23,13 +23,16 @@ export function Hero() {
                                 <Image
                                     src="/bilds-icon.svg"
                                     alt="Icon"
+                                    layout="responsive"
                                     width={250}
                                     height={250}
                                     priority={true}
+                                    className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8" // Adjust these sizes as needed
                                 />
                             </motion.div>
                         </div>
-                        
+
+
                         <Subtitle />
                     </div>
                 </div>
@@ -41,8 +44,8 @@ export function Hero() {
 
 const Title = () => {
     return (
-        <div className={`${anton.className} lg:text-8xl text-4xl font-bold flex items-center justify-center`}>
-            <TextHoverEffect text="bilds." />
+        <div className={`${anton.className} text-8xl font-bold flex items-center justify-center`}>
+            bilds.
         </div>
     );
 };
@@ -51,18 +54,16 @@ const Subtitle = () => {
     return (
         <>
             <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
-                Empowering {"Bangladesh's"} 
-                <span className="font-bold text-pink-400"> FMCG </span>
-                Industry
+                Revolutionizing
+                <span className="font-bold text-pink-400"> INDUSTRIES </span>
+                with
             </p>
-            <div className='p-5'>
-                <Highlight className="lg:text-4xl font-bold text-primary-content leading-relaxed lg:leading-snug text-center mx-auto">
-                with Innovative Distribution & Logistics Solutions
-                </Highlight>
-            </div>
-            <div className={`mt-auto lg:text-xl font-bold text-center`}>
-                Driving transformation, efficiency, and sustainable growth across the FMCG sector in Bangladesh
-            </div>
+            <p className={`${lato.className} lg:text-4xl font-bold text-primary-content`}>
+                Seamless Communication, Optimized Distribution,
+            </p>
+            <p className={`mt-auto lg:text-xl font-bold text-center`}>
+                and Unmatched Market Excellence through Innovative Solutions.
+            </p>
         </>
     );
 };

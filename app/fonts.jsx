@@ -11,8 +11,8 @@ export const anton = Anton({
 export const lato = Lato({
     subsets: ['latin'],
     variable: "--font-lato",
-    display: "swap",
-    weight: ["400", "300", "700"]
+    display: "block",
+    weight: ["300", "400", "700"]
 });
 
 
