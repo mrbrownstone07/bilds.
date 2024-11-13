@@ -17,12 +17,13 @@ export default function Index() {
 			<BackgroundBeams />
 		  </div>
   
+		  {/* <div className="bg-gradient-to-br from-indigo-200 via-pink-200 via-50% to-indigo-200"> */}
 		  <div className="bg-combined-gradient">
 			<Hero />
 		  </div>
   
 		  <div className="h-full w-full rounded-md bg-gray-220 relative flex flex-col items-center justify-center antialiased">
-			<div className="absolute inset-0 pointer-events-none bg-dot-thick-zinc-200 z-10"></div> 
+			<div className="absolute inset-0 pointer-events-none bg-dot-thick-purple-200 z-10"></div> 
 			<div className="z-10">
 			  <div className="w-full">
 				<Content />

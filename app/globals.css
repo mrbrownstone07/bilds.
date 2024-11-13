@@ -59,8 +59,8 @@ html {
 
 .bg-combined-gradient {
   background-image: 
-    linear-gradient(to top, #ffffff, #87c0f1, #fb91ff),
-    linear-gradient(to right, #e38fe6, #ec00c5, #ffffff)
+    linear-gradient(to top, #ffffff, #cc9dd8, #4f579c),
+    linear-gradient(to right, #ffffff, #f7ddf2, #ffffff)
     
 }
 
