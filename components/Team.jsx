@@ -32,7 +32,7 @@ export default function Team() {
     const boardMembers = [
         {
             name: "Fahim Rahman",
-            title: "Dorector",
+            title: "Director",
             imageSrc: "/abrar.svg",
             imageAlt: "Image of Fahim Rahman",
             description: "An accomplished entrepreneur, Fahim brings a wealth of experience and strategic insight to the board, supporting growth and innovation initiatives."
@@ -60,7 +60,7 @@ export default function Team() {
                     </CardTitle>
                 </CardHeader>  */}
                 <CardContent>
-                    <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {teamMembers.map((member, index) => (
                             <RectCard
                                 key={index}
@@ -85,7 +85,7 @@ export default function Team() {
                     </CardTitle>
                 </CardHeader>  */}
                 <CardContent>
-                    <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {boardMembers.map((member, index) => (
                             <RectCard
                                 key={index}
