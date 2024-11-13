@@ -2,9 +2,6 @@
 import { anton, lato } from '@/app/fonts';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Highlight } from './ui/hero-highlight';
-import { TextHoverEffect } from './ui/text-hover-effect';
-
 
 export function Hero() {
     return (
