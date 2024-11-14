@@ -1,31 +1,43 @@
 "use client";
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import Image from "next/image";
 
 export function InfoCard({ title, imageSrc, content }) {
     return (
         <motion.div
-        className="w-full md:w-1/2 flex items-stretch"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-            duration: 2, // Adjust this duration to control the speed of fade-in
-            ease: "easeInOut",
-        }}
-        viewport={{ once: true }}
-    >
-        <Card className="rounded shadow-none p-6 bg-background text-gray-100 h-full flex-1">
-            <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-primary text-center">
-                    {title}
-                </CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col lg:flex-row items-center gap-6">
+            className="w-full flex flex-col"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+                duration: 2, // Adjust this duration to control the speed of fade-in
+                ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
+        >
+            {/* Title */}
+            <motion.h1
+                initial={{ opacity: 0, y: -20 }}  // Start off with title slightly above and invisible
+                animate={{ opacity: 1, y: 0 }}  // Fade in and move to original position
+                transition={{
+                    duration: 1,
+                    ease: "easeInOut",
+                }}
+                className="text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-6xl 
+                    font-bold p-4 text-orange-500 [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)]"
+            >
+                {title}
+            </motion.h1>
+
+            {/* Image */}
+            {imageSrc && (
                 <motion.div
-                    className="w-full lg:w-1/4 h-48 mb-4 rounded-lg overflow-hidden flex justify-center items-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{ opacity: 0, scale: 0.8 }}  // Start off small and invisible
+                    animate={{ opacity: 1, scale: 1 }}  // Fade in and scale to normal size
+                    transition={{
+                        duration: 1.5,
+                        ease: "easeInOut",
+                    }}
+                    className="flex items-center justify-center p-4"
                 >
                     <Image
                         src={imageSrc}
@@ -35,11 +47,21 @@ export function InfoCard({ title, imageSrc, content }) {
                         priority={true}
                     />
                 </motion.div>
-                <div className="w-full lg:w-3/4">
-                    <p className="text-justify text-primary">{content}</p>
-                </div>
-            </CardContent>
-        </Card>
-    </motion.div>
+            )}
+
+            {/* Content */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}  // Start off below and invisible
+                animate={{ opacity: 1, y: 0 }}  // Fade in and move to original position
+                transition={{
+                    duration: 2,
+                    ease: "easeInOut",
+                }}
+                className="sm:text-base md:text-lg lg:text-2xl xl:text-4xl 2xl:text-4xl 
+                    font-bold p-4 text-start [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)]"
+            >
+                {content}
+            </motion.div>
+        </motion.div>
     );
 }

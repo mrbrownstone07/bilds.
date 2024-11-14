@@ -16,17 +16,19 @@ export function Outro() {
     ];
 
     return (
-        <div id="about" className="flex flex-col md:flex-row items-stretch justify-center gap-8 px-4 md:px-12 lg:px-20 py-12">
+        <div className="min-h-screen flex flex-col items-center justify-center">
+        <div className="flex flex-col md:flex-row items-stretch justify-center gap-8 px-4 md:px-12 lg:px-20 pt-12">
             {cardData.map((card, index) => (
                 <InfoCard
                     key={index}
                     title={card.title}
-                    imageSrc={card.imageSrc}
+                    // imageSrc={card.imageSrc}
                     content={card.content}
                     initialX={card.initialX}
                     rotate={card.rotate}
                 />
             ))}
+        </div>
         </div>
     );
 }

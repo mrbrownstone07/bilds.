@@ -57,6 +57,11 @@ module.exports = {
 					'5': 'hsl(var(--chart-5))'
 				}
 			},
+			fontFamily: {
+				secondary: ['Anton', 'sans-serif'],
+				sans: ['Geist', 'sans-serif'],
+				terminal: ['IBM Plex Mono', 'monospace'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
