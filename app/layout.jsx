@@ -27,8 +27,8 @@ export const metadata = {
 	//   images: ["/black-bdrisin-only-hand.svg"],
 	},
 	themeColor: [
-	  { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-	  { media: "(prefers-color-scheme: dark)", color: "#000000" },
+	  { media: "(prefers-color-scheme: light)", color: "#a5a4a4" },
+	  { media: "(prefers-color-scheme: dark)", color: "#a5a4a4" },
 	],
   };
 
