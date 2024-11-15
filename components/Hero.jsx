@@ -88,7 +88,18 @@ export function Hero() {
                         {/* Mobile First Row */}
                         <div className="md:hidden w-full flex flex-col items-center">
                             <div className="flex items-center justify-center mb-4">
-                                <div className="w-32 h-32 relative">
+                                <motion.div
+                                    className="w-36 h-36 relative"
+                                    animate={{
+                                        scale: [1, 1.1, 1],
+                                    }}
+                                    transition={{
+                                        duration: 3,
+                                        ease: "easeInOut",
+                                        repeat: Infinity,
+                                        repeatType: "mirror",
+                                    }}
+                                >
                                     <Image
                                         src="/logo.svg" // Ensure logo.svg is in the public folder
                                         alt="Icon"
@@ -96,7 +107,7 @@ export function Hero() {
                                         objectFit="contain"
                                         className="object-center"
                                     />
-                                </div>
+                                </motion.div>
                             </div>
                             <p className="text-zinc-700 font-sans font-bold text-center text-sm sm:text-base ">
                                 Revolutionizing Industries with Seamless Communication, Optimized Distribution,
@@ -130,7 +141,7 @@ export function Hero() {
                     {/* Bottom Heading */}
                     <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-9xl font-bold text-black tracking-widest
                         font-secondary subpixel-antialiased  
-                        absolute bottom-0 mb-10 [text-shadow:_0_4px_14px_rgb(0_0_0_/_0.7)]
+                        absolute bottom-0 mb-20 md:mb-10 [text-shadow:_0_4px_14px_rgb(0_0_0_/_0.7)]
                     ">
                         bilds
                     </h1>
