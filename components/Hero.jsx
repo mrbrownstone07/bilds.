@@ -116,7 +116,7 @@ export function Hero() {
                         </div>
 
                         {/* Mobile Second Row */}
-                        <div className="md:hidden w-full flex justify-between mt-10 px-4 font-terminal">
+                        <div className="md:hidden w-full flex justify-between px-4 font-terminal">
                             <div className="flex justify-start [text-shadow:_0_4px_14px_rgb(0_0_0_/_0.7)]">
                                 2024
                             </div>

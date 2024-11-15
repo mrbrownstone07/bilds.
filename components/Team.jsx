@@ -52,7 +52,7 @@ export default function Team() {
                 <Card className="shadow-none rounded-lg p-4 bg-color-none text-gray-100 h-full flex-1 border-none">
                     <CardHeader>
                         <CardTitle className="text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold p-4 
-                            text-left [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)] font-semibold text-orange-500 text-center"
+                            text-left [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)] font-semibold text-zinc-700 text-center"
                         >
                             Meet the Team
                         </CardTitle>

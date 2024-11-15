@@ -23,7 +23,7 @@ export function InfoCard({ title, imageSrc, content }) {
                     ease: "easeInOut",
                 }}
                 className="text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-6xl 
-                    font-bold p-4 text-orange-500 [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)]"
+                    font-bold p-4 text-zinc-700 [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)]"
             >
                 {title}
             </motion.h1>

@@ -69,7 +69,7 @@ export function Goals() {
             <Card className="shadow-none rounded-lg p-6 bg-black-800 text-primary h-full flex-1 border-none">
                 <CardHeader>
                     <CardTitle className="text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold p-4 
-                        text-left [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)] font-semibold text-orange-500 text-center">
+                        text-left [text-shadow:_0_4px_14px_rgb(50_50_117_/_0.4)] font-semibold text-zinc-700 text-center">
                         Our Commitments
                     </CardTitle>
                 </CardHeader>
