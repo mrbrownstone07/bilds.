@@ -60,7 +60,7 @@ export function Hero() {
 
                             <div className="flex items-center justify-center">
                                 <motion.div
-                                    className="w-36 h-36 relative"
+                                    className="w-48 h-48 relative"
                                     animate={{
                                         scale: [1, 1.1, 1],
                                     }}
@@ -72,7 +72,7 @@ export function Hero() {
                                     }}
                                 >
                                     <Image
-                                        src="/logo.svg" // Ensure logo.svg is in the public folder
+                                        src="/bilds.svg" // Ensure logo.svg is in the public folder
                                         alt="Icon"
                                         layout="fill"
                                         objectFit="contain"
@@ -101,7 +101,7 @@ export function Hero() {
                                     }}
                                 >
                                     <Image
-                                        src="/logo.svg" // Ensure logo.svg is in the public folder
+                                        src="/bilds.svg" // Ensure logo.svg is in the public folder
                                         alt="Icon"
                                         layout="fill"
                                         objectFit="contain"
